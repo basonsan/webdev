@@ -1,0 +1,12 @@
+
+<IfModule mod_rewrite.c>
+#работоспособность проверялась на хостинге beget
+#для битрикс все редиректы пишем в этом разделе
+# обычный редирект:
+RewriteRule ^gorizontalnyie-rezervuaryi/$ /gorizontalnye-rezervuary/ [R=301,L]
+# убираем все index.php
+RewriteCond %{THE_REQUEST} /(.*)index.php.*$
+RewriteCond %{THE_REQUEST} !bitrix/admin/ #эта строка для битрикса
+RewriteRule .* /%1 [R=301,L]
+
+</IfModule>
