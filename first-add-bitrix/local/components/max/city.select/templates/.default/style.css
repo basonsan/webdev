@@ -1,0 +1,61 @@
+.menu__item_city > a{
+    color: #FFF;
+}
+.city_select__current{
+    margin-left: 5px;
+}
+.city_select__wrapper{
+    position: fixed;
+    background: rgba(0,0,0,.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.city_select__container{
+    color: #000;
+    background: #FFF;
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+    position: relative;
+}
+.city_select__title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+.city_select__title input{
+    width: 200px;
+}
+.city_select__list{
+    overflow: auto;
+    width: 100%;
+    height: 92%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.city_select__list-items{
+
+}
+
+.city_select__col {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 25%;
+}
+
+.city_select__char {
+    font-weight: bold;
+    text-align: left;
+}
+
+.city_select__item {
+    text-align: left;
+}
